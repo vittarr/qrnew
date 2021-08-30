@@ -1,0 +1,72 @@
+{
+  "name": "back",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "",
+  "private": true,
+  "main": "src",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "VT",
+    "email": "vittarr@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "src",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^15.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && npm run mocha",
+    "lint": "eslint src/. test/. --config .eslintrc.json --fix",
+    "dev": "nodemon src/",
+    "start": "node src/",
+    "mocha": "mocha test/ --recursive --exit"
+  },
+  "standard": {
+    "env": [
+      "mocha"
+    ],
+    "ignore": []
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.5.11",
+    "@feathersjs/authentication-client": "^4.5.11",
+    "@feathersjs/authentication-local": "^4.5.11",
+    "@feathersjs/authentication-oauth": "^4.5.11",
+    "@feathersjs/configuration": "^4.5.11",
+    "@feathersjs/errors": "^4.5.11",
+    "@feathersjs/express": "^4.5.11",
+    "@feathersjs/feathers": "^4.5.11",
+    "@feathersjs/socketio": "^4.5.11",
+    "@feathersjs/socketio-client": "^4.5.11",
+    "@feathersjs/transport-commons": "^4.5.11",
+    "@vue/composition-api": "^1.0.0-rc.12",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "feathers-authentication-hooks": "^1.0.2",
+    "feathers-hooks-common": "^5.0.6",
+    "feathers-permissions": "^2.1.4",
+    "feathers-sequelize": "^6.2.0",
+    "feathers-vuex": "^3.16.0",
+    "helmet": "^4.6.0",
+    "sequelize": "^6.6.2",
+    "serve-favicon": "^2.5.0",
+    "socket.io-client": "^2.4.0",
+    "sqlite3": "^5.0.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "eslint": "^7.29.0",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7"
+  }
+}
